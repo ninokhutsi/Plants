@@ -1,0 +1,239 @@
+.header .navigation, .footer-social {
+  align-items: center;
+  text-align: center; }
+
+.header .logo {
+  font-family: "Cormorant", serif;
+  font-weight: bold;
+  font-size: 36px; }
+
+.burger {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  overflow: hidden; }
+
+.header .logo-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.body {
+  background-color: #fafafa; }
+
+.header .logo-wrapper {
+  padding: 2%; }
+
+.header .navigation {
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #284324;
+  height: 100%;
+  top: 1%;
+  right: -100%;
+  transition: right .3s linear;
+  margin-top: 12%;
+  z-index: 100; }
+  .header .navigation.active {
+    right: 0; }
+  .header .navigation li a {
+    font-family: "Cormorant", serif;
+    font-size: 20px;
+    line-height: 5;
+    color: #fafafa; }
+
+.header .navigation-soc {
+  display: none; }
+
+.section-1 .image {
+  text-align: center; }
+  .section-1 .image img {
+    width: 100%; }
+  .section-1 .image .enter-button {
+    margin-top: -5%;
+    width: 40%;
+    padding: 3%;
+    border: none;
+    font-size: 20px;
+    font-family: "Cormorant", serif;
+    color: #fafafa;
+    background-color: #284324; }
+    .section-1 .image .enter-button:hover {
+      background-color: #5C7A54; }
+
+.burger .divider {
+  cursor: pointer;
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #284324;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  transition: transform .3s linear; }
+  .burger .divider:nth-child(1) {
+    position: absolute;
+    top: 30%; }
+  .burger .divider:nth-child(2) {
+    position: absolute;
+    top: 50%; }
+  .burger .divider:nth-child(3) {
+    position: absolute;
+    top: 70%; }
+
+.burger.active .divider:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%; }
+
+.burger.active .divider:nth-child(2) {
+  left: inherit;
+  right: -100%;
+  top: 50%; }
+
+.burger.active .divider:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%; }
+
+.footer-social {
+  margin-top: 80%; }
+  .footer-social li a {
+    font-family: "Cormorant", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #284324; }
+
+.wrapper-2, .title {
+  display: none; }
+
+@media (min-width: 769px) {
+  .footer-social {
+    display: none; }
+  .burger {
+    display: none; }
+  .section-1 {
+    display: none; }
+  .body {
+    background-image: url(../img/main.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right; }
+  .header .logo {
+    font-size: 70px; }
+  .wrapper-2 {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; }
+    .wrapper-2 .navigation-2 {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 20%;
+      margin-top: -5%; }
+    .wrapper-2 .navigation-soc-2 {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 30%;
+      margin-top: -5%; }
+    .wrapper-2 ul li a {
+      color: #284324;
+      font-family: "Cormorant", serif;
+      font-size: 26px; }
+      .wrapper-2 ul li a:hover {
+        color: #5C7A54; }
+  .title {
+    display: block;
+    font-family: "Cormorant", serif;
+    font-weight: lighter;
+    font-size: 150px;
+    letter-spacing: 20px;
+    margin-top: 7%;
+    margin-left: 5%; }
+  .footer-box {
+    margin-top: 15%;
+    display: flex; }
+    .footer-box .green-background-box {
+      width: 20%;
+      display: flex;
+      background-color: #284324; }
+      .footer-box .green-background-box .footer-date {
+        color: #fafafa;
+        transform: rotate(-90deg); }
+      .footer-box .green-background-box .footer-right-text {
+        margin-left: 30%;
+        margin-top: 15%; }
+        .footer-box .green-background-box .footer-right-text h5 {
+          font-family: "Cormorant", serif;
+          font-size: 26px;
+          color: #5C7A54; }
+        .footer-box .green-background-box .footer-right-text .footer-list {
+          margin-top: 10%;
+          display: flex; }
+          .footer-box .green-background-box .footer-right-text .footer-list .circle {
+            vertical-align: middle;
+            background-color: #5C7A54;
+            width: 10px;
+            height: 10px;
+            border-radius: 50px; }
+          .footer-box .green-background-box .footer-right-text .footer-list p {
+            width: 150px;
+            vertical-align: middle;
+            color: #fafafa;
+            font-family: "Cormorant", serif;
+            font-size: 14px; }
+    .footer-box .footer-text-box {
+      background-color: #fafafa;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 2%;
+      width: 63%; }
+      .footer-box .footer-text-box .footer-text {
+        margin-top: 2%;
+        width: 11%; }
+        .footer-box .footer-text-box .footer-text h5 {
+          font-family: "Cormorant", serif;
+          font-size: 26px;
+          font-weight: bold;
+          color: #7B8C79;
+          padding: 5px; }
+        .footer-box .footer-text-box .footer-text p {
+          font-family: "Cormorant", serif;
+          font-size: 14px;
+          font-weight: bold;
+          color: #7B8C79; }
+          .footer-box .footer-text-box .footer-text p:nth-child(27) {
+            margin-top: 20px; }
+    .footer-box .right-green-box {
+      background-color: #284324;
+      width: 5%; }
+  .main-section {
+    display: flex;
+    flex-direction: column; }
+  .transparent-box-1 {
+    position: fixed;
+    top: 45%;
+    left: 24%;
+    width: 325px;
+    height: 190px;
+    background-color: #00000011; }
+    .transparent-box-1:hover {
+      background-color: #0000003d; }
+    .transparent-box-1.active {
+      left: 50%;
+      transition: 1s; }
+  .transparent-box-2 {
+    position: fixed;
+    right: 0;
+    top: 11%;
+    width: 250px;
+    height: 200px;
+    background-color: #00000011; }
+  .transparent-box-3 {
+    position: fixed;
+    top: 55.5%;
+    left: 60%;
+    width: 200px;
+    height: 200px;
+    background-color: #00000011; } }
